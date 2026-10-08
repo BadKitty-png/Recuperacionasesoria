@@ -27,4 +27,8 @@ public class Par<K, V> {
     public String toString() {
         return "Par{clave=" + clave + ", valor=" + valor + "}";
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 69bcc113688a9c760741afe0bed27883f4f69e4d
