@@ -1,7 +1,7 @@
 /*Autor: Jan Carlo Mtz Mtz 
-*Mision 1: El manifiesto 
+*Mision 1: El manifiest.
 *
-*
+*Para edu bb<3
 *
 */
 package src;
@@ -20,10 +20,10 @@ public class Par<K, V> {
     }
 
     public V getValor() {
-        return valor;
+        return valor;//Obtenemos regresamos valor
     }
 
-    @Override
+    @Override //Retirnamos el string ya con lo previamente obtenido
     public String toString() {
         return "Par{clave=" + clave + ", valor=" + valor + "}";
     }
