@@ -10,7 +10,7 @@ public class Caja<T extends Comparable<T>> {
         elementos = (T[]) new Comparable[capacidad];
         cantidad = 0;
     }
-//se implementa el metodo 
+//se implementa el metodo de agregar donde la cantidad sera del tamaño del arreglo
     public void agregar(T elemento) {
         if (cantidad == elementos.length) {
             throw new IllegalStateException(
@@ -19,7 +19,7 @@ public class Caja<T extends Comparable<T>> {
         elementos[cantidad] = elemento;
         cantidad++;
     }
-
+//Se realiza la comparacion de valores y se obtiene el mayor
     public T obtenerMayor() {
         validarNoVacia();
         T mayor = elementos[0];
@@ -30,7 +30,7 @@ public class Caja<T extends Comparable<T>> {
         }
         return mayor;
     }
-
+//se realiza la operacion contraria donde aqui se obtiene el valor menor
     public T obtenerMenor() {
         validarNoVacia();
         T menor = elementos[0];
